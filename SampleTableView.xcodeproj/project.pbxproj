@@ -66,6 +66,7 @@
 			children = (
 				2A07C0F0270F3A1700774DBC /* AppDelegate.swift */,
 				2A07C0F2270F3A1700774DBC /* SceneDelegate.swift */,
+				2A07C10F2711643800774DBC /* Util */,
 				2A07C10E2710746400774DBC /* Model */,
 				2A07C109270F3B6300774DBC /* Controller */,
 				2A07C108270F3B4E00774DBC /* View */,
@@ -89,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				2A07C0F4270F3A1700774DBC /* TableViewController.swift */,
-				2A07C10A2710714C00774DBC /* SampleAPI.swift */,
 				2A07C0F6270F3A1700774DBC /* Main.storyboard */,
 			);
 			path = Controller;
@@ -101,6 +101,14 @@
 				2A07C10C2710742A00774DBC /* UserModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2A07C10F2711643800774DBC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2A07C10A2710714C00774DBC /* SampleAPI.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

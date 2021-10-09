@@ -25,8 +25,34 @@ class TableViewCell: UITableViewCell {
     }
     
     func configure(user: UserModel) {
+        if let iconImageUrlStr = user.icon, !iconImageUrlStr.isEmpty {
+            iconView.image = getImage(UrlStr: iconImageUrlStr)
+        }
+        
         nameLabel.text = user.name
         mainTextLabel.text = user.mainText
+        
+        if let contentsImageUrlStr = user.image, !contentsImageUrlStr.isEmpty {
+            guard let image = getImage(UrlStr: contentsImageUrlStr) else {
+                contentsImageView.isHidden = true
+                return
+            }
+            contentsImageView.image = image
+            contentsImageView.isHidden = false
+        } else {
+            contentsImageView.isHidden = true
+        }
+    }
+    
+    func getImage(UrlStr: String) -> UIImage? {
+        guard let url = URL(string: UrlStr) else { return nil }
+        do {
+            let data = try Data(contentsOf: url)
+            return UIImage(data: data)
+        } catch {
+            print("error")
+            return nil
+        }
     }
     
     override func awakeFromNib() {

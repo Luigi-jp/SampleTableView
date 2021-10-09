@@ -18,6 +18,7 @@ class TableViewController: UIViewController {
     @IBOutlet weak var indecator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView! {
         didSet {
+            // カスタムセルの登録
             let cellNib = UINib(nibName: cellClassName, bundle: nil)
             tableView.register(cellNib, forCellReuseIdentifier: reuseId)
             

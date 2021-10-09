@@ -19,10 +19,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mqV-z9-nv2">
-                        <rect key="frame" x="16" y="10" width="455" height="167"/>
+                        <rect key="frame" x="16" y="10" width="455" height="568"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeT-Bm-LIp">
-                                <rect key="frame" x="0.0" y="0.0" width="60" height="167"/>
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="568"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pEI-bc-qYO">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -41,7 +41,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RfV-0V-Uze">
-                                <rect key="frame" x="70" y="0.0" width="385" height="167"/>
+                                <rect key="frame" x="70" y="0.0" width="385" height="568"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf6-63-VIr">
                                         <rect key="frame" x="0.0" y="0.0" width="385" height="29"/>
@@ -56,8 +56,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pxO-BF-cIs">
-                                        <rect key="frame" x="0.0" y="167" width="385" height="385"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pxO-BF-cIs">
+                                        <rect key="frame" x="0.0" y="183" width="385" height="385"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pxO-BF-cIs" secondAttribute="height" multiplier="1:1" id="Ziy-D9-KKD"/>
                                         </constraints>
